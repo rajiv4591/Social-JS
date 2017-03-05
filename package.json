@@ -1,0 +1,21 @@
+{
+  "name": "css_spinner_library",
+  "version": "1.0.0",
+  "description": "A loading spinner library using css keyframes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build-css": "node-sass --include-path scss scss/spinners.scss public/scss/spinners.css"
+  },
+  "author": "Rajiv",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "devDependencies": {
+    "express": "^4.15.0",
+    "node-sass": "^4.5.0",
+    "nodemon": "^1.11.0"
+  }
+}

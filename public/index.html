@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <script src="//connect.facebook.net/en_US/sdk.js" id="facebook-jssdk"></script>
+    </head>
+    <body>
+        <br><br>
+        <div class="container">
+            <div class="row">
+                <div class="jumbotron alert alert-success">
+                    <h1>$ocial JS</h1> 
+                    <p>Implementing Social platform login made easier!</p> 
+                </div>
+            </div>
+            <div class="row" id="selectdiv">
+                <div class="col-md-6 col-md-offset-3">
+                    <div class="form-group">
+                        <label for="sel1">Select a platform:</label>
+                        <select class="form-control" id="sel1">
+                            <option id="sel2">Facebook</option>
+                            <option id="sel2">Google</option>
+                            <option id="sel2">Linkedin</option>
+                        </select>
+                    </div>
+                    <div id="count">
+                        <div id="$ocial-login">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="details">
+                <div class="col-md-2">
+                    <img src='' id="display" style="width: 100px; height: 100px" />
+                </div>
+                <div class="col-md-6">
+                    <p class="lead" id="loggedin"></p>
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-default" onClick="signOut()">Sign Out</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="jquery-3.1.1.js"></script>
+        <script src="social-1.0.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
