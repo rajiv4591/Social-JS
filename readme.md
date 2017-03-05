@@ -69,8 +69,7 @@ To signout a user, just call the signOut() method on the instance you created. I
 
 ```
 google.signOut(function () {
-    document.getElementById('selectdiv').style.display = 'block';
-    document.getElementById('details').style.display = 'none';
+    // Your code here
 });
     
 ```
