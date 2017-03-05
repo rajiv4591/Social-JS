@@ -62,6 +62,18 @@ The implement method creates all the script tags and meta tags required to imple
 * Response for failed login
 
     On failed login the response is just an error object returned from the API
+    
+### Signing out
+
+To signout a user, just call the signOut() method on the instance you created. It takes a callback which will be called after succesful sign out
+
+```
+google.signOut(function () {
+    document.getElementById('selectdiv').style.display = 'block';
+    document.getElementById('details').style.display = 'none';
+});
+    
+```
 
 
 ### Demo Project
