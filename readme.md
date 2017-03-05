@@ -20,7 +20,7 @@ Before implementing a login flow, you must have an api key for your app from tha
 
 ### Implementing a login flow
 
-In your HTML, create a div with id='$ocial-login'. The login button will be created inside this div.
+In your HTML, create a div with id='$ocial-login'. The login button for your platform will be created inside this div.
 
 ```
 <div id="$ocial-login"></div>
@@ -37,7 +37,7 @@ var google = $ocial('google', [YOUR_API_KEY]);
 Now that you have the instance created, call the implement method on your instance as shown below. You need to pass a callback function with the implement method so that it gets called after successful or failed implementation
 
 ```
-var google.implement(function (response) {
+google.implement(function (response) {
     console.log(response);
 });
 ```
@@ -45,6 +45,7 @@ var google.implement(function (response) {
 The implement method creates all the script tags and meta tags required to implement login flow for that platform and appends them to your document. It also creates a login button that comes with the API. For every change in login status or failed login attempts, the callback function you passed with the implement method gets called with a response argument.
 
 * Response for succesful login
+
     On succesful login, the response object is:
     
     ```
@@ -59,12 +60,13 @@ The implement method creates all the script tags and meta tags required to imple
     
     ```
 * Response for failed login
+
     On failed login the response is just an error object returned from the API
 
 
 ### Demo Project
 
-A demo project can be found in the public folder.
+A demo project can be found in the public folder. It only works for localhost:3000 as I have registered that url as a redirect url when I got my API keys.
 
 ### Note
 
