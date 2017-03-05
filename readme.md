@@ -27,8 +27,8 @@ In your HTML, create a div with id='$ocial-login'. The login button will be crea
 ```
 
 Now in your JS file, create an instance of the login by calling $ocial(). It takes two arguments
-1. The login platform you want to implement
-2. The API key of your app for that platform
+* 1. The login platform you want to implement
+* 2. The API key of your app for that platform
 
 ```
 var google = $ocial('google', [YOUR_API_KEY]);
