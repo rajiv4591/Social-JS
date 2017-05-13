@@ -4,7 +4,7 @@ Social JS is a wrapper library around popular social login platforms like Google
 
 ## Platforms Supported
 
-$ocial JS supports Google, Facebook and LinkedIn logins for now. Support for Twitter and Github will be added in the future.
+$ocial JS supports Google, Facebook and LinkedIn logins for now.
 
 ## Getting Started
 
@@ -79,17 +79,9 @@ google.signOut(function () {
 
 A demo project can be found in the public folder. It only works for localhost:3000 as I have registered that url as a redirect url when I got my API keys.
 
-### Note
-
-This is a work under progress. Support for more login platforms will be added.
-
 ## Authors
 
 * **Rajiv Ratan Reddy** - *Initial work*
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
